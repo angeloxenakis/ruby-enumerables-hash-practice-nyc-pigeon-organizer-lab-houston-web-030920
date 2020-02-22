@@ -14,11 +14,11 @@ def nyc_pigeon_organizer(data)
       end 
     end 
   end
-  data[:color].each do |specific_trait, names_array|
+  data[:color].each do |color, names_array|
     names_array.map do |name|
-      pigeon_list[name][trait_type].push(trait.to_s)
+      pigeon_list[name][color].push(trait.to_s)
     end
-  end
+ end
   pigeon_list
 end
 
