@@ -19,6 +19,11 @@ def nyc_pigeon_organizer(data)
       pigeon_list[name][:color].push(color.to_s)
     end
  end
+   data[:gender].each do |gender, names_array|
+    names_array.map do |name|
+      pigeon_list[name][:gender].push(gender.to_s)
+    end
+ end
   pigeon_list
 end
 
